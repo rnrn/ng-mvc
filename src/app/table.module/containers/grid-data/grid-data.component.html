@@ -1,0 +1,7 @@
+<button (click)="onUpdate()">UPDATE</button>
+<br>
+<br>
+<pr-grid-view
+    [rowData]="data$ | async"
+    (updated)="onUpdate()"
+></pr-grid-view>
